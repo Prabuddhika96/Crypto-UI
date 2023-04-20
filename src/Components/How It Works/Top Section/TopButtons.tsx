@@ -6,7 +6,7 @@ import TopBtn from "./TopBtn";
 
 function TopButtons() {
   return (
-    <div className="flex items-center justify-around w-full ">
+    <div className="items-center justify-around w-full md:flex max-md:block max-md:justify-start">
       <TopBtn
         logo={trustPilot}
         name={"TrustPilot"}

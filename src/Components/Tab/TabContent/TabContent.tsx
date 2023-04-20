@@ -4,7 +4,7 @@ import TableContentBtn from "./TabComponents/TableContentBtn";
 
 function TabContent() {
   const [inputText1, setInputText1] = useState("0.1");
-  const [inputText2, setInputText2] = useState("0.1");
+  const [, setInputText2] = useState("0.1");
   return (
     <div className="w-11/12 mx-auto">
       <TabContentRow

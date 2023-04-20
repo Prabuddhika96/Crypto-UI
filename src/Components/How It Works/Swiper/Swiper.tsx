@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 function Swiper() {
@@ -53,40 +53,40 @@ function Swiper() {
   }, [page]);
 
   return (
-    <div className="flex items-center justify-center w-8/12 gap-5 mx-auto">
-      <div className="w-6/12 px-10 text-left">
+    <div className="flex items-center justify-center w-8/12 gap-5 mx-auto max-md:block max-md:w-full">
+      <div className="w-6/12 px-10 text-left max-md:w-full max-md:mx-auto">
         <p className="text-sm text-[#859AB5]">Step {page}</p>
         <p className="my-6 text-4xl">{slide.title}</p>
         <p className="text-md my-8 text-[#6d7a8a]">{slide.text}</p>
 
-        <div className="flex items-center justify-start gap-2 my-8">
+        <div className="flex items-center justify-start gap-2 my-8 max-md:justify-center">
           <div className="anim-bar-background">
             <div
-              className={`w-[100px] h-[5px] ${
+              className={`anim-blue-bar ${
                 bar === true && page === 1 ? "anim-bar" : ""
               }`}></div>
           </div>
           <div className="anim-bar-background">
             <div
-              className={`w-[100px] h-[5px] ${
+              className={`anim-blue-bar ${
                 bar === true && page === 2 ? "anim-bar" : ""
               }`}></div>
           </div>
           <div className="anim-bar-background">
             <div
-              className={`w-[100px] h-[5px] ${
+              className={`anim-blue-bar ${
                 bar === true && page === 3 ? "anim-bar" : ""
               }`}></div>
           </div>
           <div className="anim-bar-background">
             <div
-              className={`w-[100px] h-[5px] ${
+              className={`anim-blue-bar ${
                 bar === true && page === 4 ? "anim-bar" : ""
               }`}></div>
           </div>
         </div>
 
-        <div className="flex items-center justify-start gap-4">
+        <div className="flex items-center justify-start gap-4 max-md:hidden">
           <p onClick={handlePrev} className="bg-[#9fa9b67b] p-2 rounded-md">
             <MdNavigateBefore />
           </p>
@@ -98,7 +98,7 @@ function Swiper() {
           </p>
         </div>
       </div>
-      <div className="w-6/12">
+      <div className="w-6/12 max-md:w-full max-md:mx-auto max-md:flex max-md:justify-center">
         <img
           src={slide.image}
           alt=""
@@ -106,6 +106,19 @@ function Swiper() {
           height={"500px"}
           className={` ${left === true ? "anim-img" : ""} `}
         />
+      </div>
+
+      {/* responsive navigation */}
+      <div className="flex items-center justify-center gap-4 my-5 md:hidden">
+        <p onClick={handlePrev} className="bg-[#9fa9b67b] p-2 rounded-md">
+          <MdNavigateBefore />
+        </p>
+        <p className="text-md text-[#6d7a8a]">
+          {page} <span className="text-sm text-black">/ 4</span>
+        </p>
+        <p onClick={handleNext} className="bg-[#9fa9b67b] p-2 rounded-md">
+          <MdNavigateNext />
+        </p>
       </div>
     </div>
   );

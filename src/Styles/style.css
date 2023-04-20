@@ -13,7 +13,10 @@
     @apply h-screen fixed z-10 top-10 right-0 bg-[#05132ce1] overflow-x-hidden duration-500 py-4;
   }
   .anim-bar-background {
-    @apply relative bg-slate-300 w-[100px] h-[5px];
+    @apply relative bg-slate-300 w-[100px] h-[3px];
+  }
+  .anim-blue-bar {
+    @apply w-[100px] h-[3px];
   }
 }
 

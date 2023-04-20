@@ -8,8 +8,8 @@ function TopBtn({ logo, name, ratings, rate }: any) {
   }
 
   return (
-    <button className="flex items-center justify-center px-5 h-16 bg-[#a2a2a248] rounded-xl">
-      <div className="">
+    <button className="flex items-center justify-center px-5 py-3 max-md:py-2 bg-[#a2a2a248] rounded-xl max-md:my-3">
+      <div className="max-md:flex max-md:gap-3">
         <div className="flex items-center justify-start gap-3">
           <img src={logo} alt="" width={"25px"} />
           <p className="text-white">{name}</p>

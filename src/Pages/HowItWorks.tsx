@@ -1,5 +1,6 @@
 import Swiper from "Components/How It Works/Swiper/Swiper";
 import TopSection from "Components/How It Works/Top Section/TopSection";
+import VideoSection from "Components/How It Works/VideoSection/VideoSection";
 
 function HowItWorks() {
   return (
@@ -12,7 +13,7 @@ function HowItWorks() {
       </div>
 
       <div className="min-h-[600px] bg-white w-full flex justify-center items-center py-10">
-        <Swiper />
+        <VideoSection />
       </div>
     </div>
   );
