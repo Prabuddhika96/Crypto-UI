@@ -21,7 +21,10 @@
 }
 
 body {
-  background-color: #062763;
+  /* background-color: #062763; */
+  background-image: url("../Img/3386851.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .accordion-content {

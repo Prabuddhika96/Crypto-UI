@@ -1,7 +1,7 @@
 import React from "react";
 import trustPilot from "Img/pngwing.com.png";
 import play from "Img/pngwing.com (1).png";
-import app from "Img/pngwing.com (1).png";
+import app from "Img/app store 2.png";
 import TopBtn from "./TopBtn";
 
 function TopButtons() {
