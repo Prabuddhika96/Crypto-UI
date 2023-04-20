@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-li-desktop {
+    @apply block;
+  }
+  .sidenav {
+    @apply h-screen fixed z-10 top-0 right-0 bg-[#05132c] overflow-x-hidden duration-500 py-4;
+  }
+  .sub-sidenav {
+    @apply h-screen fixed z-10 top-10 right-0 bg-[#05132ce1] overflow-x-hidden duration-500 py-4;
+  }
+  .anim-bar-background {
+    @apply relative bg-slate-300 w-[100px] h-[5px];
+  }
+}
+
+body {
+  background-color: #062763;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+.accordion-section.active .accordion-content {
+  display: block;
+}
+
+.gradient-bg {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(202, 208, 215, 1) 100%
+  );
+}
+
+.crypto-select option[data-image] {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAi0lEQVR4AWMAAQAADABJvIN9D4AAAAASUVORK5CYII=");
+}
+
+.anim-img {
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+  /* animation-iteration-count: infinite; */
+}
+@keyframes example {
+  0% {
+    left: 150px;
+    top: 0px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 100%;
+  }
+}
+
+.anim-bar {
+  position: absolute;
+  animation-name: example-bar;
+  animation-duration: 3s;
+  /* animation-iteration-count: infinite; */
+}
+@keyframes example-bar {
+  0% {
+    width: 0px;
+    top: 0px;
+    opacity: 0;
+  }
+  100% {
+    background-color: blue;
+    width: 100px;
+    top: 0px;
+    opacity: 100%;
+  }
+}

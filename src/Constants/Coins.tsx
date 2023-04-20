@@ -1,0 +1,28 @@
+const Coins = [
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+  { name: "BTC", image: "", fullName: "Bitcoin" },
+];
+
+export default Coins;
