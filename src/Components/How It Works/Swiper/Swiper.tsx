@@ -3,7 +3,7 @@ import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 function Swiper() {
   const [left, setLeft] = useState<boolean>(false);
-  const [bar, setBar] = useState<boolean>(false);
+  const [bar, setBar] = useState<boolean>(true);
   const [page, setPage] = useState(1);
 
   const handleBar = () => {
